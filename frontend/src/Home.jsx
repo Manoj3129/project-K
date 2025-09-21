@@ -93,19 +93,19 @@ const Home = () => {
 
     ]
     return (
-        <div className="flex items-center flex-col justify-center mt-10 gap-5">
+        <div className="flex items-center flex-col justify-center gap-5">
             <NavBar />
             <h1 className="text-4xl text-black font-bold">Welcome to BlogVerse</h1>
             <p className="text-3xl text-gray-600 text-center font-semibold">
                 Discover amazing stories, insights, and ideas from our community of <br />
                 writers. <span className="text-blue-700">Sign in</span> to create your own posts and save your favorites.
             </p>
-            <div className=" px-5 py-6 flex gap-10 flex-wrap p">
+            <div className="w-full flex justify-center items-center gap-10 flex-wrap p">
                 {
                     posts.map((blog) => {
                         return (
                             (
-                                <div className="mt-8 w-[600px] max-w-md border p-6">
+                                <div className="mt-8 w-[600px] flex flex-col justify-around items-center max-w-md px-5 py-3">
                                     <div>
                                         <img src={blog.image} alt={blog.title} className="w-full h-48 object-cover rounded-md mb-4" />
                                         <div className="flex gap-4"><img src={blog.author_image} alt="" className="w-[40px] rounded-2xl" /><div className="flex flex-col">
